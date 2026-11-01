@@ -1,0 +1,46 @@
+{
+  "name": "dsh-diy-timebar",
+  "version": "0.1.0",
+  "description": "DSH 界面顶部的 24 小时 DeepSeek API 峰谷价格时间条：实时标出当前时刻处于高峰价还是低谷价",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib"
+  ],
+  "dsh": {
+    "client": {
+      "platform": "web"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek",
+    "deepseek-harness",
+    "cordis",
+    "pricing",
+    "timebar"
+  ],
+  "homepage": "https://github.com/XiShanXian/dsh-timebar#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XiShanXian/dsh-timebar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/XiShanXian/dsh-timebar/issues"
+  },
+  "author": "XiShanXian",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node scripts/verify-rules.cjs",
+    "test:tokens": "node scripts/check-theme-tokens.cjs lib/client.js"
+  }
+}
